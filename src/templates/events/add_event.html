@@ -1,0 +1,15 @@
+
+<div>
+    <h1> Add an event here</h1>
+        <form method="POST">
+            {{form.hidden_tag()}}
+            {{form.description.label}} {{form.description()}} 
+            {% for error in form.description.errors %}
+                {{ error }}
+            {% endfor %}
+
+            {{form.organizer.label}} {{form.organizer() }}
+            {{form.submit()}}
+        </form>
+
+</div>
