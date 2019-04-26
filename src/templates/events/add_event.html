@@ -1,5 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
 
-<div back>
+<div class="container" back>
     <h1> Add an event here</h1>
         <form method="POST">
             {{ form.hidden_tag() }}
@@ -10,9 +12,15 @@
             {% endfor %}
         </p>
 
+        <p>{{ form.location.label }} {{ form.location() }}</p>
+        <p>{{ form.start_date.label }} {{ form.start_date() }} </p>
+        <p>{{ form.end_date.label }} {{ form.end_date() }} </p>
+
         <p> {{form.organizer.label}} {{form.organizer() }} </p>
 
         <button>{{form.submit()}}</button>
         </form>
 
 </div>
+
+{% endblock %}
