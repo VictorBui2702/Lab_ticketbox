@@ -2,7 +2,7 @@
 
 - Created with love by Victor
 
-- View online at: 
+- View online at: http://event-hub-page.netlify.com (please note that the link does not work)
 
 
 
