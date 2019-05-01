@@ -18,7 +18,10 @@
 
         <p> {{form.organizer.label}} {{form.organizer() }} </p>
 
-        <button>{{form.submit()}}</button>
+        <!-- <button>{{form.submit()}}</button> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >
+            {{form.submit()}}
+        </button>
         </form>
 
 </div>
